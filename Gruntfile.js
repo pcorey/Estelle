@@ -1,13 +1,5 @@
 module.exports = function(grunt) {
     grunt.initConfig({
-        jekyll: {
-            serve: {
-                options: {
-                    serve: true,
-                    watch: true
-                }
-            }
-        },
         less: {
             development: {
                 options: {
@@ -15,7 +7,7 @@ module.exports = function(grunt) {
                     yuicompress: true
                 },
                 files: {
-                    'css/main.css': 'less/main.less'
+                    'style.css': 'less/style.less'
                 }
             }
         },
@@ -24,21 +16,9 @@ module.exports = function(grunt) {
                 files: ['less/**/*.less'],
                 tasks: ['less']
             }
-        },
-        concurrent: {
-            all: {
-                tasks: ['jekyll:serve', 'watch'],
-                options: {
-                    logConcurrentOutput: true
-                }
-            }
         }
     });
 
-    grunt.loadNpmTasks('grunt-jekyll');
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-concurrent');
-
-    grunt.registerTask('default', ['concurrent:all']);
 };
