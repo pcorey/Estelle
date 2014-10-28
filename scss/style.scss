@@ -1,0 +1,40 @@
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display:900|Playfair+Display+SC:900|Raleway:600,400,300);
+
+@import "mono";
+@import "variables";
+
+@import "border-box";
+@import "header";
+@import "post";
+
+html {
+    width: 100%;
+}
+
+body {
+    margin: 0 auto;
+    font-family: $secondary-font;
+  
+    width: 100%;
+    max-width: 800px;
+}
+
+
+footer {
+  &:before {
+    display: block;
+    content: '';
+    border-top: 1px solid $fill;
+    width: 100%;
+    margin: 80px auto 0;
+  }
+  text-align: center;
+  a {
+    font-family: 'Playfair Display SC'; 
+    display: inline-block;
+    margin: 40px 40px;
+    color: $fill;
+    text-decoration: none;
+    font-size: 20px;
+  }
+}

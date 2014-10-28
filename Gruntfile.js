@@ -1,24 +1,20 @@
 module.exports = function(grunt) {
     grunt.initConfig({
-        less: {
-            development: {
-                options: {
-                    paths: ['./less'],
-                    yuicompress: true
-                },
+        sass: {
+            dist: {
                 files: {
-                    'style.css': 'less/style.less'
+                    'style.css': 'scss/style.scss'
                 }
             }
         },
         watch: {
             less: {
-                files: ['less/**/*.less'],
-                tasks: ['less']
+                files: ['scss/**/*.scss'],
+                tasks: ['sass']
             }
         }
     });
 
-    grunt.loadNpmTasks('grunt-contrib-less');
+    grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
 };
