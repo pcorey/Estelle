@@ -1,5 +1,8 @@
 body > header {
   margin: 80px 0;
+  a {
+    text-decoration: none;
+  }
   svg {
     width: 800px;
     //font-family: $primary-font;

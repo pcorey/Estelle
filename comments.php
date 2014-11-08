@@ -18,17 +18,20 @@ if ( post_password_required() ) {
 }
 ?>
 
-<div id="comments" class="comments-area">
+<section class="comments">
 
 	<?php // You can start editing here -- including this comment! ?>
 
-	<?php if ( have_comments() ) : ?>
-		<h2 class="comments-title">
-			<?php
-				printf( _nx( 'One thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', get_comments_number(), 'comments title', 'estelle' ),
-					number_format_i18n( get_comments_number() ), '<span>' . get_the_title() . '</span>' );
-			?>
-		</h2>
+	<h1>Comments</h2>
+    <?php foreach (get_comments() as $comment): ?>
+        <div class="comment">
+            <p><?php echo $comment->comment_content; ?></p>
+            <h2><?php echo $comment->comment_author; ?></h2>
+            <p><?php echo get_avatar($comment->user_id); ?></p>
+        </div>
+    <?php endforeach; ?>
+
+
 
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through ?>
 		<nav id="comment-nav-above" class="comment-navigation" role="navigation">
@@ -55,7 +58,6 @@ if ( post_password_required() ) {
 		</nav><!-- #comment-nav-below -->
 		<?php endif; // check for comment navigation ?>
 
-	<?php endif; // have_comments() ?>
 
 	<?php
 		// If comments are closed and there are comments, let's leave a little note, shall we?
@@ -66,4 +68,4 @@ if ( post_password_required() ) {
 
 	<?php comment_form(); ?>
 
-</div><!-- #comments -->
+</section><!-- #comments -->

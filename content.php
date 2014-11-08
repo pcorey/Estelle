@@ -12,10 +12,7 @@
 
 		<?php
 			/* translators: %s: Name of current post */
-			the_content( sprintf(
-				__( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'estelle' ), 
-				the_title( '<span class="screen-reader-text">"', '"</span>', false )
-			) );
+			the_content();
 		?>
 
 		<!--<?php
@@ -25,7 +22,7 @@
 			) );
 		?>-->
 
-	<footer class="entry-footer">
+	<!-- <footer class="entry-footer"> -->
 		<!--<?php estelle_entry_footer(); ?>-->
-	</footer><!-- .entry-footer -->
+	<!-- </footer> --><!-- .entry-footer -->
 </article><!-- #post-## -->
