@@ -189,13 +189,13 @@ footer {
     display: block;
     content: '';
     border-top: 1px solid #222222;
-    width: 50%;
+    width: 100%;
     margin: 40px auto 40px; }
   .navigation:after {
     display: block;
     content: '';
     border-top: 1px solid #222222;
-    width: 50%;
+    width: 100%;
     margin: 40px auto 40px; }
 
 #disqus_thread a {
