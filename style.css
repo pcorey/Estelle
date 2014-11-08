@@ -141,11 +141,13 @@ body > header {
     font-size: 13px;
     color: #666666; }
 
-.comments > h1 {
+.comments {
   text-align: center;
   font-family: "Playfair Display";
   font-weight: 900;
-  font-size: 60px; }
+  font-size: 60px;
+  color: #222222;
+  margin: 20px 0 60px; }
 
 footer {
   text-align: center; }
@@ -154,7 +156,7 @@ footer {
     content: '';
     border-top: 1px solid #222222;
     width: 100%;
-    margin: 80px auto 0; }
+    margin: 10px auto 0; }
   footer a {
     font-family: 'Playfair Display SC';
     display: inline-block;
@@ -162,6 +164,42 @@ footer {
     color: #222222;
     text-decoration: none;
     font-size: 20px; }
+
+.navigation {
+  margin: 80px 0 80px 0; }
+  .navigation .nav-links:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .navigation .nav-previous {
+    float: left; }
+  .navigation .nav-next {
+    float: right; }
+  .navigation a {
+    font-family: 'Playfair Display SC';
+    display: inline-block;
+    color: #222222;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 0.15s ease-in-out; }
+    .navigation a:hover {
+      color: #b89730;
+      cursor: pointer; }
+  .navigation:before {
+    display: block;
+    content: '';
+    border-top: 1px solid #222222;
+    width: 50%;
+    margin: 40px auto 40px; }
+  .navigation:after {
+    display: block;
+    content: '';
+    border-top: 1px solid #222222;
+    width: 50%;
+    margin: 40px auto 40px; }
+
+#disqus_thread a {
+  color: #b89730; }
 
 html {
   width: 100%; }

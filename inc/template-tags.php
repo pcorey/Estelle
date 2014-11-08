@@ -49,7 +49,7 @@ function estelle_post_nav() {
 	}
 	?>
 	<nav class="navigation post-navigation" role="navigation">
-		<h1 class="screen-reader-text"><?php _e( 'Post navigation', 'estelle' ); ?></h1>
+		<!-- <h1 class="screen-reader-text"><?php _e( 'Post navigation', 'estelle' ); ?></h1> -->
 		<div class="nav-links">
 			<?php
 				previous_post_link( '<div class="nav-previous">%link</div>', _x( '<span class="meta-nav">&larr;</span>&nbsp;%title', 'Previous post link', 'estelle' ) );

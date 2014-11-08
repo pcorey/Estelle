@@ -16,6 +16,7 @@ get_header(); ?>
 
 			<?php estelle_post_nav(); ?>
 
+            <h1 class="comments">Comments</h1>
 			<?php
 				// If comments are open or we have at least one comment, load up the comment template
 				if ( comments_open() || get_comments_number() ) :

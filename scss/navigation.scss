@@ -1,0 +1,38 @@
+.navigation {
+    margin: 80px 0 80px 0;
+    .nav-links {
+        @include clearfix;
+    }
+    .nav-previous {
+        float: left;
+    }
+    .nav-next {
+        float: right;
+    }
+    a {
+        font-family: 'Playfair Display SC'; 
+        display: inline-block;
+        color: $fill;
+        text-decoration: none;
+        font-size: 20px;
+        transition: all 0.15s ease-in-out;
+        &:hover {
+            color: $bright;
+            cursor: pointer;
+        }
+    }
+    &:before {
+        display: block;
+        content: '';
+        border-top: 1px solid $fill;
+        width: 50%;
+        margin: 40px auto 40px;
+    }
+    &:after {
+        display: block;
+        content: '';
+        border-top: 1px solid $fill;
+        width: 50%;
+        margin: 40px auto 40px;
+    }
+}
