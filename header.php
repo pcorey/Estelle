@@ -15,6 +15,15 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
+<script src="//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+<script>
+  WebFont.load({
+    google: {
+      families: ['Playfair Display:900', 'Playfair Display+SC:900', 'Raleway:600,400,300']
+    }
+  });
+</script>
+
 <?php wp_head(); ?>
 </head>
 
