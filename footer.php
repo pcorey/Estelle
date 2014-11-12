@@ -19,6 +19,7 @@
 
 <?php wp_footer(); ?>
 
+<script type="text/javascript" async src="//assets.pinterest.com/js/pinit.js"></script>
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="<?php bloginfo('template_url'); ?>/js/main.js"></script>
 
