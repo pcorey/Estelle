@@ -1,18 +1,25 @@
 footer {
-  &:before {
-    display: block;
-    content: '';
-    border-top: 1px solid $fill;
-    width: 100%;
-    margin: 10px auto 0;
-  }
-  text-align: center;
-  a {
-    font-family: 'Playfair Display SC'; 
-    display: inline-block;
-    margin: 40px 40px;
-    color: $fill;
-    text-decoration: none;
-    font-size: 20px;
-  }
+    &:before {
+        display: block;
+        content: '';
+        border-top: 1px solid $fill;
+        width: 100%;
+        margin: 10px auto 0;
+    }
+    text-align: center;
+    a {
+        font-family: $primary-font-sc; 
+        display: inline-block;
+        margin: 40px 40px;
+        color: $fill;
+        text-decoration: none;
+        font-size: 20px;
+        transition: all 0.15s ease-in-out;
+        &:hover {
+            color: $bright;
+        }
+        @media (max-width: $small-breakpoint) {
+            margin: 20px 40px;
+        }
+    }
 }
