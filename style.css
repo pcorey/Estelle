@@ -29,9 +29,19 @@ body > header {
   margin: 80px 0; }
   body > header a {
     text-decoration: none; }
-  body > header svg {
-    width: 800px;
+  body > header .svg-wrapper {
+    position: relative;
+    display: block;
+    width: 100%;
     max-width: 100%;
+    height: 0;
+    padding-bottom: 14.179%; }
+  body > header svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     font-family: "Playfair Display SC";
     font-weight: 900;
     font-size: 12px;
@@ -79,7 +89,8 @@ body > header {
     font-weight: 600;
     color: #b89730;
     font-size: 20px;
-    border-color: white; }
+    border-color: white;
+    opacity: 0; }
     body > header #searchbar::-webkit-input-placeholder {
       color: #ffe7c5; }
     body > header #searchbar:-moz-placeholder {
@@ -92,7 +103,8 @@ body > header {
       color: #ffe7c5; }
     body > header #searchbar.expanded {
       border-color: #FFE7C5;
-      width: 250px; }
+      width: 250px;
+      opacity: 1; }
       @media (max-width: 500px) {
         body > header #searchbar.expanded {
           width: 100%;

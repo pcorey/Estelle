@@ -20,14 +20,12 @@
 
 <body>
     <header>
-        <div class="svg-wrapper">
-            <a href="/">
-                <svg viewBox="0 0 93.8 13.3">
-                    <text x="0.5" y="3" class="tiny">Ms.</text>
-                    <text x="0" y="13">Estelle Marie</text>
-                </svg>
-            </a>
-        </div>
+        <a class="svg-wrapper" href="/">
+            <svg viewBox="0 0 93.8 13.3">
+                <text x="0.5" y="3" class="tiny">Ms.</text>
+                <text x="0" y="13">Estelle Marie</text>
+            </svg>
+        </a>
         <section class="social">
             <form id="searchform" action="/" method="get">
                 <input id="searchbar" name="s" placeholder="Search...">
