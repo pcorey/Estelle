@@ -23,6 +23,9 @@
             &:hover {
                 color: $bright;
             }
+            @media (max-width: 550px) {
+                font-size: 30px;
+            }
         }
         .date {
             margin: 0;
