@@ -33,7 +33,7 @@
         }
     }
 
-    p {
+    p, li {
         color: $fill;
         text-align: justify;
         font-family: $secondary-font;
@@ -41,6 +41,14 @@
         font-size: 18px;
         line-height: 1.8;
         margin: 40px 0;
+    }
+
+    li {
+        margin: 0;
+    }
+
+    ul {
+        margin-top: -40px;
     }
 
     a {
