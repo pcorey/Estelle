@@ -88,22 +88,22 @@ body > header {
     padding-left: 4px;
     font-family: "Raleway";
     font-weight: 600;
-    color: #B89730;
+    color: #222;
     font-size: 20px;
     border-color: white;
     opacity: 0; }
     body > header #searchbar::-webkit-input-placeholder {
-      color: #FFE7C5; }
+      color: #a2a2a2; }
     body > header #searchbar:-moz-placeholder {
-      color: #FFE7C5;
+      color: #a2a2a2;
       opacity: 1; }
     body > header #searchbar::-moz-placeholder {
-      color: #FFE7C5;
+      color: #a2a2a2;
       opacity: 1; }
     body > header #searchbar:-ms-input-placeholder {
-      color: #FFE7C5; }
+      color: #a2a2a2; }
     body > header #searchbar.expanded {
-      border-color: #FFE7C5;
+      border-color: #222;
       width: 250px;
       opacity: 1; }
       @media (max-width: 500px) {

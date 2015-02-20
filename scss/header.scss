@@ -67,26 +67,26 @@ body > header {
         padding-left: 4px;
         font-family: $secondary-font;
         font-weight: 600;
-        color: $bright;
+        color: $fill;
         font-size: 20px;
         border-color: white;
         opacity: 0;
         &::-webkit-input-placeholder { 
-            color:    $light;
+            color:    lighten($fill, 50%);
         }
         &:-moz-placeholder {
-           color:    $light;
+           color:    lighten($fill, 50%);
            opacity:  1;
         }
         &::-moz-placeholder {
-           color:    $light;
+           color:    lighten($fill, 50%);
            opacity:  1;
         }
         &:-ms-input-placeholder {
-           color:    $light;
+           color:    lighten($fill, 50%);
         }
         &.expanded {
-            border-color: #FFE7C5;
+            border-color: $fill;
             width: 250px;
             opacity: 1;
             @media (max-width: $small-breakpoint) {
@@ -94,9 +94,5 @@ body > header {
                 margin-bottom: 8px;
             }
         }
-        // @media (max-width: $small-breakpoint) {
-        //     display: block;
-        //     margin-bottom: 8px;
-        // }
     }
 }
