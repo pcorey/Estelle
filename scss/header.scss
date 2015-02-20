@@ -50,9 +50,6 @@ body > header {
         text-shadow: 0 0 1px #ccc;
         transition: all 0.15s ease-in-out;
         fill: $fill;
-        &:hover {
-            fill: $bright;
-        }
     }
     form {
         display: inline;

@@ -48,7 +48,7 @@ body > header {
     font-family: "Playfair Display SC";
     font-weight: 900;
     font-size: 12px;
-    fill: #222222; }
+    fill: #222; }
     body > header svg .tiny {
       font-size: 4px; }
   body > header .social {
@@ -72,9 +72,7 @@ body > header {
     box-shadow: 0 0 5px white;
     text-shadow: 0 0 1px #ccc;
     transition: all 0.15s ease-in-out;
-    fill: #222222; }
-    body > header .icon:hover {
-      fill: #b89730; }
+    fill: #222; }
   body > header form {
     display: inline; }
   body > header #searchbar {
@@ -90,20 +88,20 @@ body > header {
     padding-left: 4px;
     font-family: "Raleway";
     font-weight: 600;
-    color: #b89730;
+    color: #B89730;
     font-size: 20px;
     border-color: white;
     opacity: 0; }
     body > header #searchbar::-webkit-input-placeholder {
-      color: #ffe7c5; }
+      color: #FFE7C5; }
     body > header #searchbar:-moz-placeholder {
-      color: #ffe7c5;
+      color: #FFE7C5;
       opacity: 1; }
     body > header #searchbar::-moz-placeholder {
-      color: #ffe7c5;
+      color: #FFE7C5;
       opacity: 1; }
     body > header #searchbar:-ms-input-placeholder {
-      color: #ffe7c5; }
+      color: #FFE7C5; }
     body > header #searchbar.expanded {
       border-color: #FFE7C5;
       width: 250px;
@@ -116,7 +114,7 @@ body > header {
 .post:before, .page:before {
   display: block;
   content: '';
-  border-top: 1px solid #222222;
+  border-top: 1px solid #222;
   width: 50%;
   margin: 80px auto 0; }
 .post > header h1, .page > header h1 {
@@ -124,33 +122,42 @@ body > header {
 .post > header h1 a, .page > header h1 a {
   text-decoration: none;
   display: block;
-  color: #222222;
+  color: #222;
   text-align: center;
   font-family: "Playfair Display";
   font-weight: 900;
   font-size: 60px;
-  transition: all 0.15s ease-in-out; }
+  transition: all 0.15s ease-in-out;
+  text-shadow: 0px 0px 2px transparent; }
   .post > header h1 a:hover, .page > header h1 a:hover {
-    color: #b89730; }
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.33); }
+  @media (max-width: 550px) {
+    .post > header h1 a, .page > header h1 a {
+      font-size: 30px; } }
 .post > header .date, .page > header .date {
   margin: 0;
   padding: 0;
   text-align: center;
   font-size: 13px;
   margin-bottom: 40px; }
-.post p, .page p {
-  color: #222222;
+.post p, .post li, .page p, .page li {
+  color: #222;
   text-align: justify;
   font-family: "Raleway";
   font-weight: 300;
   font-size: 18px;
   line-height: 1.8;
   margin: 40px 0; }
+.post li, .page li {
+  margin: 0; }
+.post ul, .page ul {
+  margin-top: -40px; }
 .post a, .page a {
-  color: #222222;
-  transition: all 0.15s ease-in-out; }
+  color: #222;
+  transition: all 0.15s ease-in-out;
+  text-shadow: 0px 0px 1px transparent; }
   .post a:hover, .page a:hover {
-    color: #b89730; }
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.33); }
 .post img, .page img {
   max-width: 100%;
   height: auto; }
@@ -160,7 +167,7 @@ body > header {
   .post figure .wp-caption-text, .page figure .wp-caption-text {
     text-align: center;
     font-size: 13px;
-    color: #666666;
+    color: #666;
     margin-bottom: 40px; }
 
 .no-comment-spacer {
@@ -171,7 +178,7 @@ body > header {
   font-family: "Playfair Display";
   font-weight: 900;
   font-size: 60px;
-  color: #222222;
+  color: #222;
   margin: 20px 0 60px; }
 
 footer {
@@ -179,19 +186,20 @@ footer {
   footer:before {
     display: block;
     content: '';
-    border-top: 1px solid #222222;
+    border-top: 1px solid #222;
     width: 100%;
     margin: 10px auto 0; }
   footer a {
     font-family: "Playfair Display SC";
     display: inline-block;
     margin: 40px 40px;
-    color: #222222;
+    color: #222;
     text-decoration: none;
     font-size: 20px;
+    text-shadow: 0px 0px 1px transparent;
     transition: all 0.15s ease-in-out; }
     footer a:hover {
-      color: #b89730; }
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.33); }
     @media (max-width: 500px) {
       footer a {
         margin: 20px 40px; } }
@@ -209,23 +217,24 @@ footer {
   .navigation a {
     font-family: "Playfair Display SC";
     display: inline-block;
-    color: #222222;
+    color: #222;
     text-decoration: none;
     font-size: 20px;
-    transition: all 0.15s ease-in-out; }
+    transition: all 0.15s ease-in-out;
+    text-shadow: 0px 0px 1px transparent; }
     .navigation a:hover {
-      color: #b89730;
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.33);
       cursor: pointer; }
   .navigation:before {
     display: block;
     content: '';
-    border-top: 1px solid #222222;
+    border-top: 1px solid #222;
     width: 100%;
     margin: 40px auto 40px; }
   .navigation:after {
     display: block;
     content: '';
-    border-top: 1px solid #222222;
+    border-top: 1px solid #222;
     width: 100%;
     margin: 40px auto 40px; }
 
@@ -235,7 +244,7 @@ footer {
     display: none; }
 
 #disqus_thread a {
-  color: #b89730; }
+  color: #B89730; }
 
 .not-found {
   margin: 160px 0; }
@@ -256,7 +265,7 @@ footer {
       font-size: 30px;
       line-height: 50px;
       padding-left: 10px;
-      border: 1px solid #222222; }
+      border: 1px solid #222; }
       .not-found #searchform input::-webkit-input-placeholder {
         color: #ddd; }
       .not-found #searchform input:-moz-placeholder {
@@ -278,13 +287,13 @@ footer {
       font-size: 30px;
       line-height: 50px;
       padding: 0;
-      color: #222222;
+      color: #222;
       background-color: white;
       transition: all 0.15s ease-in-out;
-      border: 2px solid #222222; }
+      border: 2px solid #222;
+      text-shadow: 0px 0px 1px transparent; }
       .not-found #searchform button:hover, .not-found #searchform button:active {
-        border-color: #b89730;
-        color: #b89730; }
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.33); }
       @media (max-width: 500px) {
         .not-found #searchform button {
           margin-top: 4px;
@@ -297,6 +306,27 @@ footer {
   font-size: 24px;
   font-weight: 300; }
 
+table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse; }
+
+tr {
+  vertical-align: top; }
+
+td {
+  border: 1px solid #222;
+  padding: 40px 0;
+  line-height: 1;
+  font-size: 18px;
+  color: #222;
+  font-weight: 300;
+  text-align: center; }
+
+.post td p {
+  margin: 0;
+  padding: 0; }
+
 html {
   width: 100%; }
 
@@ -306,3 +336,5 @@ body {
   width: 100%;
   max-width: 840px;
   padding: 0 20px; }
+
+/*# sourceMappingURL=style.css.map */
